@@ -61,3 +61,9 @@ words = readmeNumpy.lower().split()
 maxWord = Counter(words).most_common(1)
 
 print (f" '{maxWord[0][0]}' aparece {maxWord[0][1]} veces")
+
+counter=0                                                                       #Consultar que paso aca 
+for i in words:
+    if "numpy" in i:
+        counter+=1
+print (f"numpy aparece {counter} veces")
