@@ -1,7 +1,7 @@
 # Indique la palabra que aparece mayor cantidad de veces en el texto del README.md de numpy.
 #Copie y pegue el texto en una varible.
 
-
+import string 
 from collections import Counter
 
 
@@ -58,7 +58,8 @@ guide](https://opensource.guide/how-to-contribute/) helps explain why, what,
 and how to successfully get involved."""
 
 words = readmeNumpy.lower().split()
-maxWord = Counter(words).most_common(1)
-#FILTRAR SOLO LAS PALABRAS QUE ARRANCAN CON UNA LETRA ASI NO ME SALTAN GUIONES Y COSAS ASI 
-print (f" '{maxWord[0][0]}' aparece {maxWord[0][1]} veces")
+words_list= list(filter(lambda x: x[0] in string.ascii_letters , words))
 
+maxWord = Counter(words_list).most_common(1)
+
+print (f" '{maxWord[0][0]}' aparece {maxWord[0][1]} veces")

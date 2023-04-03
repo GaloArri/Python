@@ -1,4 +1,5 @@
-#5. Dada una frase y un string ingresados por teclado (en ese orden), genere una lista de palabras, y sobre ella, informe la cantidad de palabras en las que se encuentra el string. No distingir entre mayúsculas y minúsculas.
+#5. Dada una frase y un string ingresados por teclado (en ese orden), genere una lista de palabras, y sobre ella, informe la cantidad de palabras en las que se encuentra el string
+# . No distingir entre mayúsculas y minúsculas.
 #
 #**Ejemplo 1**
 #- **Para la frase**: "Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres."
